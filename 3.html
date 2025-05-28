@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi primera pagina responsive</title>
+
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo-link" style="cursor:pointer; color:black; text-decoration:none; ">
+            Vaca Saturno Saturnin
+        </h1>
+    </header>
+
+    <script>
+        function hover() {
+            document.getElementById('titulo-link').style.color = "#0000004f";
+        }
+        function unhover() {
+            document.getElementById('titulo-link').style.color = "black";
+        }
+        document.getElementById('titulo-link').onclick = function() {
+            window.location.href = 'index.html';
+        };
+        document.getElementById('titulo-link').onmouseover = hover;
+        document.getElementById('titulo-link').onmouseout = unhover;
+    </script> 
+
+    <nav>
+        <ul>
+           <a href="1.html"><strong>Inicio</strong></a>
+            <a href="2.html"><strong>Sobre mi</strong></a>
+            <a href="3.html"><strong>Proyectos</strong></a>
+            <a href="4.html"><strong>Contacto</strong></a>
+        </ul>
+    </nav>
+
+    <section class="home">
+            <div class="aside">
+                <div> 
+                    <h2><strong> Datos interesantes</strong></h2>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis consequuntur dolorum aspernatur sint, quasi distinctio ipsum delectus iste inventore in suscipit debitis rem dolor blanditiis iure libero natus, ab sunt? </p>
+                </div>
+                <div>
+                    <h2><strong>Historia y cultura 🏛️</strong></h2> 
+                    <p>1.-Cleopatra vivió más cerca del iPhone que de las pirámides: Las pirámides fueron construidas unos 2.500 años antes de que ella naciera.</p>
+                    <p>2.-Napoleón no era especialmente bajo: Medía alrededor de 1,69 m, una altura promedio para su época.</p></p>
+                </div>
+            </div>
+            <div class="main"> 
+                <div> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aperiam optio laborum dolore mollitia quae omnis saepe ab natus, ipsam nam voluptatibus veniam nulla aut nesciunt, quo dolor commodi accusamus.</p>
+                </div>
+            </div>  
+    </section>
+
+    <footer>
+        <p>&copy creado por JM</p>
+    </footer>
+</body>
+</html>

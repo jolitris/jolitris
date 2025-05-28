@@ -1,0 +1,177 @@
+body{
+    background-color: #dbd8d8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    scrollbar-color: #ededed;
+    scrollbar-width: 100px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    color: #0000005c;
+}
+
+header{
+    background-color: #ffffffd9;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: #0000005c 0px 0px 10px;
+    min-width: 359px;
+}
+
+.home{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.aside{
+    box-sizing: border-box;
+    flex:2 1 25%;
+}
+
+h1:hover{
+    color: #0000005c;
+}
+
+.main{
+    flex: 2 1 65%;
+    margin: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #ffffffd9;
+    box-shadow: #0000005c 0px 0px 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.aside div{
+    background-color: #ffffffd9;
+    padding: 25px;
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow: #0000005c 0px 0px 10px;
+}
+
+h2{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    padding: 10px;
+    background-color: #ffffffd9;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: #0000005c 0px 0px 10px;
+    margin-bottom: 15px;
+    min-width: 359px;
+    box-sizing: border-box;
+}
+
+a:hover{
+        color:  #0000004f;
+    }
+    
+ul{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+a{
+        text-decoration: none;
+        color: black;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-sizing: border-box;
+    }
+    
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff00;
+    text-align: center;
+    font-size: 15px;
+    min-width: 348px;
+}
+
+@media (max-width:550px){
+    .home{
+        flex-direction: column;
+        min-width: 400px;
+    }
+}
+
+@media (max-width:450px){
+    .main{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:100px){
+    a{
+    text-decoration: none;
+    color: black;
+    margin-left: 2%;
+    margin-right: 2%;
+    }
+}
+
+@media (min-width:450px){
+    a{
+    text-decoration: none;
+    color: black;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+
+    }
+}
+
+@media (min-width:532px){
+    a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+}
+
+@media (min-width:600px){
+    a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+    } 
+}
+
+@media (min-width:700px){
+    a{
+    text-decoration: none;
+    color: black;
+    margin-left: 6.5%;
+    margin-right:6.5%;
+    } 
+}
+
+@media (min-width:900px){
+    a{
+    text-decoration: none;
+    color: black;
+    margin-left: 8%;
+    margin-right: 8%;
+    } 
+}
