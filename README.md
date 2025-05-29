@@ -1,4 +1,4 @@
-## Hi there, I am joel mena  👋
+## Hi there 👋 , I'm Joel Mena  
 
 <!--
 **jolitris/jolitris** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
