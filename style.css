@@ -172,3 +172,9 @@ footer{
     margin-right: 8%;
     } 
 }
+
+@media (max-width:750px){
+    .main .img{
+        width: 200px;
+    }
+}
