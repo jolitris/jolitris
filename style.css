@@ -37,10 +37,6 @@ header{
     flex:2 1 25%;
 }
 
-h1:hover{
-    color: #0000005c;
-}
-
 .main{
     flex: 2 1 65%;
     margin: 20px;
