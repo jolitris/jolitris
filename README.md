@@ -13,5 +13,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-This is my page of my pets:  <a href="https://jolitris.github.io/jolitris/" target="_blank"></a>
+This is my page of my pets:  <a href="https://jolitris.github.io/jolitris/" target="_blank">https://jolitris.github.io/jolitris</a>
 
