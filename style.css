@@ -23,7 +23,7 @@ header{
     margin-bottom: 25px;
     text-align: center;
     box-sizing: border-box;
-    box-shadow: #0000005c 0px 0px 10px;
+    box-shadow: #0000005c 0px 0px 10px;/*x, y, tamaño*/
     min-width: 359px;
 }
 
@@ -33,8 +33,34 @@ header{
 }
 
 .aside{
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    flex:2 1 25%;
+    flex: 2 1 25%; /*flex-grow, flwx-shrink, flex-basis*/
+}
+
+.aside > div{
+    flex: 1 1 0%;
+    background-color: #ffffffd9;
+    height: 100%;
+    margin: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: #0000005c 0px 0px 10px;
+}
+
+.aside > div:last-child{
+    flex: 1 1 0%;
+    background-color: #ffffffd9;
+    margin: 20px;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: #0000005c 0px 0px 10px;
+}
+
+h1:hover{
+    color: #0000005c;
 }
 
 .main{
@@ -49,14 +75,6 @@ header{
     align-items: center;
     flex-direction: column;
     display: flex;
-}
-
-.aside div{
-    background-color: #ffffffd9;
-    padding: 25px;
-    margin: 20px;
-    box-sizing: border-box;
-    box-shadow: #0000005c 0px 0px 10px;
 }
 
 h2{
@@ -78,22 +96,35 @@ nav{
 }
 
 a:hover{
-        color:  #0000004f;
-    }
+    color:  #0000004f;
+}
     
 ul{
     padding: 0px;
     margin: 0px;
-    
 }
 
 a{
-        text-decoration: none;
-        color: black;
-        margin-left: 10%;
-        margin-right: 10%;
-        box-sizing: border-box;
-    }
+    text-decoration: none;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-sizing: border-box;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffd9;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: #0000004f 0px 0px 10px;
+    min-width: 359px;
+}
     
 footer{
     bottom: 0;
@@ -103,6 +134,18 @@ footer{
     text-align: center;
     font-size: 15px;
     min-width: 348px;
+}
+
+@media (max-width: 700px){
+    .aside{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 950px){
+    .aside{
+        font-size: 13px;
+    }
 }
 
 @media (max-width:550px){
@@ -172,7 +215,6 @@ footer{
     margin-right: 8%;
     } 
 }
-
 @media (max-width:750px){
     .main .img{
         width: 200px;
