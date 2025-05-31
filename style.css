@@ -24,7 +24,8 @@ header{
     text-align: center;
     box-sizing: border-box;
     box-shadow: #0000005c 0px 0px 10px;/*x, y, tamaño*/
-    min-width: 355px;
+    min-width: 359px;
+    border-radius: 5px;
 }
 
 .home{
@@ -47,6 +48,7 @@ header{
     padding: 25px;
     box-sizing: border-box;
     box-shadow: #0000005c 0px 0px 10px;
+    border-radius: 5px;
 }
 
 .aside > div:last-child{
@@ -57,6 +59,7 @@ header{
     padding: 25px;
     box-sizing: border-box;
     box-shadow: #0000005c 0px 0px 10px;
+    border-radius: 5px;
 }
 
 h1:hover{
@@ -74,6 +77,7 @@ h1:hover{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    border-radius: 5px;
     display: flex;
 }
 
@@ -91,8 +95,9 @@ nav{
     margin-left: 20px;
     box-shadow: #0000005c 0px 0px 10px;
     margin-bottom: 15px;
-    min-width: 355px;
+    min-width: 359px;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 a:hover{
@@ -123,7 +128,8 @@ a{
     margin-bottom: 20px;
     margin-right: 20px;
     box-shadow: #0000004f 0px 0px 10px;
-    min-width: 355px;
+    min-width: 359px;
+    border-radius: 5px;
 }
     
 footer{
@@ -151,7 +157,7 @@ footer{
 @media (max-width:550px){
     .home{
         flex-direction: column;
-        min-width: 396px;
+        min-width: 400px;
     }
 }
 
