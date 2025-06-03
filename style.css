@@ -38,6 +38,7 @@ header{
     flex-direction: column;
     box-sizing: border-box;
     flex: 2 1 25%; /*flex-grow, flwx-shrink, flex-basis*/
+    font-size: 14px;
 }
 
 .aside > div{
@@ -60,10 +61,6 @@ header{
     box-sizing: border-box;
     box-shadow: #0000005c 0px 0px 10px;
     border-radius: 5px;
-}
-
-h1:hover{
-    color: #0000005c;
 }
 
 .main{
@@ -131,6 +128,16 @@ a{
     min-width: 359px;
     border-radius: 5px;
 }
+
+.container-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-2{
+    flex-direction: row;
+    display: flex;
+}
     
 footer{
     bottom: 0;
@@ -142,15 +149,24 @@ footer{
     min-width: 348px;
 }
 
+@media (max-width: 760px){
+    .img{
+        flex-direction: column;
+    }
+    .container-2{
+        margin-top: 0px
+    }
+}
+
 @media (max-width: 700px){
     .aside{
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
 @media (max-width: 950px){
     .aside{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
