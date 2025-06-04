@@ -158,8 +158,7 @@ a{
 }
 
 .content-modal{
-    width: 100%;
-    max-width: 482px;
+    width: auto;
     padding: 20px;
     background-color: #ffffffd9;
     position: relative;
@@ -185,7 +184,11 @@ a{
     cursor: pointer;
     font-size: 15px;
     border: none;
-    left: 45%;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
 }
 
 .btn-cerrar:hover{
