@@ -7,7 +7,6 @@
     <title>Las mascotas de mi familia/JM</title>
 
 </head>
-<body>
 
     <header>
         <h1 id="titulo-link"; style="cursor: pointer; color: black; text-decoration:none;">
@@ -64,18 +63,46 @@
     </section>
     <section class="img">
         <section class="container-1">
-            <div class="img-1"> 
-                <img src="https://cdn.qwenlm.ai/69bdc6b6-11ce-4b35-9723-4958673ae90b/bed742eb-a896-427c-ba72-5cf1dbaf7212_IMG-20250527-WA0076.jpg?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV91c2VyX2lkIjoiNjliZGM2YjYtMTFjZS00YjM1LTk3MjMtNDk1ODY3M2FlOTBiIiwicmVzb3VyY2VfaWQiOiJiZWQ3NDJlYi1hODk2LTQyN2MtYmE3Mi01Y2YxZGJhZjcyMTIiLCJyZXNvdXJjZV9jaGF0X2lkIjpudWxsfQ.i_REKw0pLl4R8sHq_ert4u-dinnZU6dgIvqOvyZA1Z0" 
-                alt="Imagen de gatos"
-                style="width: 130px; height: 130px; margin: 20px; border-radius: 10px;">
-            </div>    
-            <div class="img-2" >        
-                <img src="https://cdn.qwenlm.ai/69bdc6b6-11ce-4b35-9723-4958673ae90b/0032fcb3-51fd-45fb-a76d-5aa3ca5d2c84_IMG-20250527-WA0084.jpg?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV91c2VyX2lkIjoiNjliZGM2YjYtMTFjZS00YjM1LTk3MjMtNDk1ODY3M2FlOTBiIiwicmVzb3VyY2VfaWQiOiIwMDMyZmNiMy01MWZkLTQ1ZmItYTc2ZC01YWEzY2E1ZDJjODQiLCJyZXNvdXJjZV9jaGF0X2lkIjpudWxsfQ.YZnurtFiYy8kaA_MzamFVsfceijS9LyILZtMRPToZQ4" 
-                alt="Imagen de gatos"
-                style="width: 130px; height: 130px; margin: 20px; border-radius: 10px;">
+            <label for="btn-modal">    
+                <div class="img-1"> 
+                    <img src="https://cdn.qwenlm.ai/69bdc6b6-11ce-4b35-9723-4958673ae90b/bed742eb-a896-427c-ba72-5cf1dbaf7212_IMG-20250527-WA0076.jpg?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV91c2VyX2lkIjoiNjliZGM2YjYtMTFjZS00YjM1LTk3MjMtNDk1ODY3M2FlOTBiIiwicmVzb3VyY2VfaWQiOiJiZWQ3NDJlYi1hODk2LTQyN2MtYmE3Mi01Y2YxZGJhZjcyMTIiLCJyZXNvdXJjZV9jaGF0X2lkIjpudWxsfQ.i_REKw0pLl4R8sHq_ert4u-dinnZU6dgIvqOvyZA1Z0" 
+                    alt="Imagen de gatos"
+                    style="width: 130px; height: 130px; margin: 20px; border-radius: 10px; cursor:pointer;" >
+                </div> 
+            </label>   
+            <div class="img-2">     
+                <label for="btn-modal">
+                    <img src="https://cdn.qwenlm.ai/69bdc6b6-11ce-4b35-9723-4958673ae90b/0032fcb3-51fd-45fb-a76d-5aa3ca5d2c84_IMG-20250527-WA0084.jpg?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV91c2VyX2lkIjoiNjliZGM2YjYtMTFjZS00YjM1LTk3MjMtNDk1ODY3M2FlOTBiIiwicmVzb3VyY2VfaWQiOiIwMDMyZmNiMy01MWZkLTQ1ZmItYTc2ZC01YWEzY2E1ZDJjODQiLCJyZXNvdXJjZV9jaGF0X2lkIjpudWxsfQ.YZnurtFiYy8kaA_MzamFVsfceijS9LyILZtMRPToZQ4" 
+                    alt="Imagen de gatos"
+                    style="width: 130px; height: 130px; margin: 20px; border-radius: 10px; cursor:pointer;">
+                </label>
             </div>
         </section>
     </section>
+
+    <script>
+        document.querySelectorAll('.container-1 img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                document.querySelector('.content-modal img').src = this.src;
+            });
+        });
+        document.querySelector('.content-modal form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que recargue la página
+            document.getElementById('btn-modal').checked = false; // Cierra el modal
+        });
+    </script>
+
+    <input type="checkbox" id="btn-modal">
+    <div class="contenedor-modal">
+        <div class="content-modal">
+            <img src="" 
+            alt="imagen"
+            style="width: 25vw; height: 25vw; border-radius: 10px;">
+            <form method="">    
+                <button class="btn-cerrar">Cerrar</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
         <p>&copy creado por JM</p>
