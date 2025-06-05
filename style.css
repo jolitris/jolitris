@@ -208,7 +208,6 @@ footer{
     text-align: center;
     font-size: 15px;
     min-width: 348px;
-    visibility: hidden;
 }
 
 @media (max-width: 760px){
