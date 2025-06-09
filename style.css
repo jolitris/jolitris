@@ -139,10 +139,6 @@ a{
     display: flex;
 }
 
-.btn-modal{
-    display: none;
-}
-
 .contenedor-modal{
     width: 100%;
     height: 100vh;
